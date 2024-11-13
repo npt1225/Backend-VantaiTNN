@@ -2,7 +2,7 @@ const express = require('express');
 const route = require('./routes/index');
 const app = express();
 const port = 3000;
-
+app.use(express.json());
 
 // Sử dụng routes cho API
 app.use('/api/v1', route);
